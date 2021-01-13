@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+
+<script>
+$(document).ready(function(){
+
+var s  =$("#choices option:selected" ).text();
+  $("#do").click(function(){
+   $("#result").append(s)
+    });
+
+
+
+});
+</script>
+
+
+<img style="margin-left :400px;" src="{{ url_for('static', filename='p.jpg') }} " width="500px" height="500px">
+
+<select name="choices" id="choices" >
+
+  <option value="Rock">Rock</option>
+  <option value="Sis">Sissors</option>
+  <option value="Paper">Paper</option>
+
+</select>
+
+<input id="do" type="submit" value="enter ">
+<p id="result"></p>
+
+</body>
+</html>/

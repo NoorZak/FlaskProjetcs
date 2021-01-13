@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body>
+      <h3>User </h3>{{userInfo[0]["id"]}}
+    <h5><h3>Full Name </h3>{{userInfo[0]["first_name"]}} {{userInfo[0]["last_name"]}}</h5>
+    <p><h3>Email </h3>{{userInfo[0]["email"]}}</p>
+    <a href="/edit/{{userInfo[0]['id']}}" class="btn btn-dark">Edit</a>
+          <a href="/delete/{{userInfo[0]['id']}}" class="btn btn-dark">Delete</a>
+
+          <a href="/" class="btn btn-dark">Home</a>
+
+</body>
+</html>

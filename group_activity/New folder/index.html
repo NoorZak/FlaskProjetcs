@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+
+</head>
+<body>
+
+<table>
+    <thead>
+    <th>id</th>
+    <th>bookname</th>
+    <th>author</th>
+
+    </thead>
+
+
+
+{% for item in books :%}
+    <tbody>
+
+   <form name=select
+         action="/delete/" method="post">
+
+    <tr >
+    <td name="id">{{item["id"]}}</td>
+    <td>{{item["book_name"]}}</td>
+    <td>{{item["book_author"]}}</td>
+        <td><input type="submit" value="Delete" > </td>
+    </tr>
+
+
+</form>
+       </tbody>
+{%endfor%}
+</table>
+</body>
+</html>

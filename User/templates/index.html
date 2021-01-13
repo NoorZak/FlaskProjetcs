@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>All User</h1>
+        <table class="table">
+          <thead class="thead-light">
+            <tr>
+              <th >#</th>
+              <th>First Name</th>
+              <th >Last Name</th>
+              <th >Email</th>
+              <th >Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            {%for UserInfo in allInfo %}
+                <tr>
+                    <th scope="row">{{UserInfo["id"]}}</th>
+                  <th scope="row">{{UserInfo["first_name"]}}</th>
+                  <td>{{UserInfo["last_name"]}}</td>
+                  <td>{{UserInfo["email"]}}</td>
+                  <td><a href="/show/{{UserInfo['id']}}">show</a> <span>|</span>  <a href="/edit/{{UserInfo['id']}}">edit</a>  <span>|</span>  <a href="/delete/{{UserInfo['id']}}">delete</a>  </td>
+                </tr>
+          {%endfor%}
+
+          </tbody>
+        </table>
+        <a href="/add_a_new_user">Add a New User</a>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding: 0;
+}
+form {
+    margin-top: 100px;
+}
+input{
+    padding: 10px 20px;
+
+}
+form input[type=email]{
+    width: 500px;
+}
+form input:last-child{
+    border:solid black 2px;
+    box-shadow: black 3px 3px;
+    display: block;
+    margin: 20px 0 0 513px;
+}
+p{
+    background-color: red;
+    border:1px solid black;
+    font-weight: bold;
+    padding:20px;
+}

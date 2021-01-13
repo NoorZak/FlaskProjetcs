@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+table{
+    width:500px;
+}
+td,th{
+    text-align: center;
+}
+main > a{
+    background-color: grey;
+    border: black solid 1px;
+    color:black;
+    padding:10px 40px;
+    text-decoration: none;
+    
+}
+main > a:hover{
+    text-decoration: none;
+    font-weight: bolder;
+}
+p{
+    background-color: green;
+    border:1px solid black;
+    font-weight: bold;
+    padding:20px;
+}
